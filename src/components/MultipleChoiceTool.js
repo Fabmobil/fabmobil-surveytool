@@ -43,6 +43,9 @@ class MultipleChoice extends React.Component {
             {option}
           </Fabutton>
         ))}
+        <span className="medium">
+          Mehrfachauswahl möglich
+        </span>
       </>
     );
   }

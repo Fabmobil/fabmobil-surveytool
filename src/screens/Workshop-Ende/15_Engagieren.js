@@ -14,7 +14,7 @@ const ANSWER_OPTIONS = [
 
 function Screen({ onSubmit, data }) {
   const navigate = useNavigate();
-  const nextRoute = "/wiewars/anythingElse";
+  const nextRoute = "/wiewars/nextTimeGeneral";
   return (
     <>
       <div className="question-and-back">

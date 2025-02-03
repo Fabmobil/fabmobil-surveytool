@@ -11,9 +11,9 @@ const ANSWER_OPTIONS = [
   "Schule",
   "Sonstige",
   "Soziale Medien",
-  "Soziokultureller Ort",
-  "Festival",
   "Makerspace",
+  "Auf dem Event gesehen",
+  "Zufällig vorbei gekommen"
 ];
 
 const nextRoute = "/losgehts/grund";

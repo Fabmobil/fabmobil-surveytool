@@ -40,52 +40,57 @@ class MultiplePictoChoice extends React.Component {
     const column2 = options[1];
     const column3 = options[2];
     return (
-      <div className="MultiplePictoChoiceTool" style={this.props.style}>
-        <div className="MultiplePictoChoiceTool__Column">
-          {column1.map((option, i) => (
-            <ClickablePicto
-              key={option.title}
-              isActive={this.isActive(option.title, data)}
-              src={option.picto}
-              srcActive={option.pictoActive || option.picto}
-              title={option.title}
-              onClick={() => {
-                this.toggle(option.title, data);
-              }}
-              style={this.getStyle(0, i)}
-            />
-          ))}
+      <div>
+        <div className="MultiplePictoChoiceTool" style={this.props.style}>
+          <div className="MultiplePictoChoiceTool__Column">
+            {column1.map((option, i) => (
+              <ClickablePicto
+                key={option.title}
+                isActive={this.isActive(option.title, data)}
+                src={option.picto}
+                srcActive={option.pictoActive || option.picto}
+                title={option.title}
+                onClick={() => {
+                  this.toggle(option.title, data);
+                }}
+                style={this.getStyle(0, i)}
+              />
+            ))}
+          </div>
+          <div className="MultiplePictoChoiceTool__Column">
+            {column2.map((option, i) => (
+              <ClickablePicto
+                key={option.title}
+                isActive={this.isActive(option.title, data)}
+                src={option.picto}
+                srcActive={option.pictoActive || option.picto}
+                title={option.title}
+                onClick={() => {
+                  this.toggle(option.title, data);
+                }}
+                style={this.getStyle(1, i)}
+              />
+            ))}
+          </div>
+          <div className="MultiplePictoChoiceTool__Column">
+            {column3.map((option, i) => (
+              <ClickablePicto
+                key={option.title}
+                isActive={this.isActive(option.title, data)}
+                src={option.picto}
+                srcActive={option.pictoActive || option.picto}
+                title={option.title}
+                onClick={() => {
+                  this.toggle(option.title, data);
+                }}
+                style={this.getStyle(2, i)}
+              />
+            ))}
+          </div>
         </div>
-        <div className="MultiplePictoChoiceTool__Column">
-          {column2.map((option, i) => (
-            <ClickablePicto
-              key={option.title}
-              isActive={this.isActive(option.title, data)}
-              src={option.picto}
-              srcActive={option.pictoActive || option.picto}
-              title={option.title}
-              onClick={() => {
-                this.toggle(option.title, data);
-              }}
-              style={this.getStyle(1, i)}
-            />
-          ))}
-        </div>
-        <div className="MultiplePictoChoiceTool__Column">
-          {column3.map((option, i) => (
-            <ClickablePicto
-              key={option.title}
-              isActive={this.isActive(option.title, data)}
-              src={option.picto}
-              srcActive={option.pictoActive || option.picto}
-              title={option.title}
-              onClick={() => {
-                this.toggle(option.title, data);
-              }}
-              style={this.getStyle(2, i)}
-            />
-          ))}
-        </div>
+        <span className="medium">
+          Mehrfachauswahl möglich
+        </span>
       </div>
     );
   }

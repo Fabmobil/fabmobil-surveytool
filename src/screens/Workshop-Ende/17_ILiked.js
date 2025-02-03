@@ -12,7 +12,7 @@ function Screen({ onSubmit, onFinalSubmit, data }) {
     <>
       <div className="question-and-back">
         <BackButton />
-        <p>Möchtest du mir noch was anderes sagen?</p>
+        <p>Was hat dir gefallen?</p>
       </div>
       <RobiGifFlex src={robiTastatur} />
       <div className="flex-wrapper">

@@ -13,8 +13,9 @@ import E12NextTime from "../screens/Workshop-Ende/12_NextTime";
 import E13Atmo from "../screens/Workshop-Ende/13_Atmo";
 import E14Angebot from "../screens/Workshop-Ende/14_Angebot";
 import E15Engagieren from "../screens/Workshop-Ende/15_Engagieren";
-import E16AnythingElse from "../screens/Workshop-Ende/16_AnythingElse";
-import E17Ende from "../screens/Workshop-Ende/17_Ende";
+import E16NextTimeGeneral from "../screens/Workshop-Ende/16_NextTimeGeneral";
+import E17ILiked from "../screens/Workshop-Ende/17_ILiked";
+import E18Ende from "../screens/Workshop-Ende/18_Ende";
 
 const surveyWorkshopEnd = {
   baseUrl: "wiewars",
@@ -80,13 +81,17 @@ const surveyWorkshopEnd = {
       screenComponent: E15Engagieren,
     },
     {
-      questionId: "anythingElse",
-      screenComponent: E16AnythingElse,
-      isFinal: true,
+      questionId: "nextTimeGeneral",
+      screenComponent: E16NextTimeGeneral
+    },
+    {
+      questionId: "iLiked",
+      screenComponent: E17ILiked,
+      isFinal: true
     },
     {
       questionId: "ende",
-      screenComponent: E17Ende,
+      screenComponent: E18Ende,
     },
   ],
 };
